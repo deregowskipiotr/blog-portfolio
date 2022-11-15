@@ -1,0 +1,41 @@
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  width: 60%;
+  padding: 0;
+}
+
+.button-container .btn.pri,
+.button-container .btn.sec {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--silver-color);
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px var(--red-color);
+  border-radius: 20px;
+}
+
+.button-container a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: var(--font-text);
+  font-weight: 700;
+}
+
+.button-container .btn.pri:hover,
+.button-container .btn.sec:hover {
+  border: none;
+  box-shadow: 1px 2px 3px var(--red-color);
+  color: var(--white-color);
+  font-weight: 100;
+}

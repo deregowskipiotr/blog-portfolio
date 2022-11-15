@@ -1,0 +1,56 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 80px;
+  top: 50%;
+  transform: translate(-100px, -50%);
+  
+  padding: 15px 10px;
+  gap: 20px;
+  opacity: 0;
+  animation: fade-nav-in 1s ease 1 1s forwards;
+  
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px var(--red-color);
+  border-radius: 20px;
+}
+
+.navigation:hover {
+  border: none;
+  box-shadow: 1px 2px 3px var(--red-color);
+  color: var(--white-color);
+  
+}
+
+@keyframes fade-nav-in {
+  to {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}
+
+.navigation a {
+  position: relative;
+  
+}
+
+.icon {
+  font-size: 60px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: fill .1s ease-in-out;
+  fill: var(--silver-color);
+}
+
+.navigation .icon.active-nav {
+  fill: var(--red-color);
+}
+
+.navigation .icon:hover {
+  fill: var(--white-color);
+  
+}

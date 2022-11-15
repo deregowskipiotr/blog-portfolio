@@ -1,0 +1,19 @@
+.members-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 10px;
+}
+
+.members-container h2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin-top: 50px;
+}

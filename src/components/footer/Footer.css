@@ -1,0 +1,52 @@
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 10px;
+}
+
+.footer-container h2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+}
+
+.scroll-up {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 30px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.scroll-up hr {
+  background-color: var(--red-color);
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.scroll-up h5 {
+  font-size: 22px;
+  font-family: var(--font-text);
+  color: var(--white-color);
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.scroll-icon-up {
+  transform: rotate(1deg);
+  font-size: 46px;
+  color: var(--silver-color);
+  font-weight: 100;
+}

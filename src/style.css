@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--silver-color);
+  z-index: 1;
+}
+
+body {
+  background: black;
+  min-height: 100vh;
+  animation: move 1s linear infinite forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  --font-text: 'Newsreader', serif;
+  --font-name: 'Pinyon Script', cursive;
+    
+    
+  --black-color: #080C12;
+  --red-color: #6d0303;
+  --linearGold-color: linear-gradient((25deg, rgb(15, 13, 7) 0%, rgb(80, 3, 3) 35%, rgb(14, 11, 5) 100%));
+  --silver-color: #646161;
+  --white-color: rgb(240, 238, 238);
+
+  --pc-width: 75%;
+  --tab-width: 90%;
+  --phone-width: 100%;
+}
+
+body::before {
+  content:'';
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  background: var(--silver-color);
+  filter: blur(140px);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  height: 200px;
+  width: 250px;
+  background: var(--white-color);
+  filter: blur(250px);
+}
+
+.bg-circle1 {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 400px;
+  width: 300px;
+  background: var(--red-color);
+  filter: blur(250px);
+}
+
+.bg-circle2 {
+  position: fixed;
+  bottom: 100px;
+  right: 250px;
+  height: 200px;
+  width: 200px;
+  background: var(--white-color);
+  filter: blur(250px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+  width: var(--pc-width);
+  
+  padding: 50px 40px;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: var(--phone-width);
+  }
+}
