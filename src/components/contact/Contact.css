@@ -1,19 +1,85 @@
 .contact-container {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.contact-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: var(--font-text);
+  color: var(--white-color);
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--red-color);
+}
+
+.contact-links {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  padding: 5px 50px;
+}
+
+.contact-links a {
+  width: 20%;
+  height: 250px;
+ 
+}
+
+.contact-links a:nth-child(2){
+  margin-top: 260px;
+}
+
+.contact-container .contact {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin-top: 10px;
+  box-shadow: inset 0 0 10px var(--red-color);
+  border-radius: 20px;
+  background: inherit;
+  transition:  .6s ease, transform .2s ease;
 }
 
-.contact-container h2 {
+.contact-container .contact:hover {
+  border: none;
+  box-shadow: 1px 2px 3px var(--red-color);
+  color: var(--white-color);
+  transform: scale(1.1);
+}
+
+.contact-container .contact .c-icon {
+  position: relative;
+  font-size: 70px;
+  fill: var(--silver-color);
+}
+
+.contact-container .contact h2 {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
-  margin-top: 50px;
+
+  margin-top: 25px;
+  font-size: 26px;
+  font-family: var(--font-text);
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.contact-container .contact span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
 }

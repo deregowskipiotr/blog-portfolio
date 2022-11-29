@@ -56,13 +56,13 @@
   align-items: center;
   z-index: 5;
   cursor: pointer;
-  height: 350px;
-  width: 350px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
 }
 
 .home-container .logo .main-img.active {
-  animation: spin 25s linear 1s infinite;
+  animation: spin 50s linear 1s infinite;
 }
 
 @keyframes spin {
@@ -76,10 +76,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130px;
-  width: 130px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
   opacity: 0;
 }
 
@@ -162,8 +162,8 @@
 
 .home-container img {
   position: absolute;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -213,3 +213,4 @@
   color: var(--silver-color);
   font-weight: 100;
 }
+

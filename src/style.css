@@ -36,7 +36,7 @@ html {
   --white-color: rgb(240, 238, 238);
 
   --pc-width: 75%;
-  --tab-width: 90%;
+  --tab-width: 80%;
   --phone-width: 100%;
 }
 
@@ -82,15 +82,19 @@ body::after {
 
 .container {
   display: flex;
-  align-items: center;
-
-  width: var(--pc-width);
   
-  padding: 50px 40px;
+  width: var(--pc-width);
   margin: 10px auto;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and ( max-width: 768px) {
+  .container {
+    width: var(--tab-width);
+  }
+}
+
+@media screen and ( max-width: 490px) {
   .container {
     width: var(--phone-width);
   }

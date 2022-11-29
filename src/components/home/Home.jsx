@@ -1,4 +1,4 @@
-import img from '../props/zdjRazem.jpg';
+import img from '../props/jajo1.jpg';
 import Buttons from '../button/Button';
 import { BsMouse } from 'react-icons/bs';
 import './Home.css';
@@ -34,7 +34,7 @@ const handleClick = (e) => {
       </a>
 
       <h2>
-        <span>About Us</span> <br />
+        <span>Co robimy...</span> <br />
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aut
           voluptatibus accusamus veritatis recusandae aliquid dignissimos quam

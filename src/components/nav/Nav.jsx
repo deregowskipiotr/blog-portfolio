@@ -1,36 +1,47 @@
-import React from "react";
-import { AiOutlineHome, AiOutlineUser, AiOutlinePicture } from 'react-icons/ai';
+import React, { useState, useEffect } from "react";
+import { AiOutlineHome, AiOutlineShopping, AiOutlinePicture } from 'react-icons/ai';
 import { BiMessageRoundedDots } from 'react-icons/bi';
 import { BsArrowDownCircle } from 'react-icons/bs';
+
 import './Nav.css';
 
 
-function Navbar() {
-  
- let Icons = document.querySelectorAll('.navigation .icon');
+ function Navbar() {
 
- Icons.forEach((icon) => {
-  icon.addEventListener('click', () => {
-    changeActive();
-    icon.classList.add('active-nav');
+  const[icon, setIcon] = useState(false);
+  
+  useEffect(() => {
+    setIcon()
+  }, [icon]);
+
+  let Icons = document.querySelectorAll('.navigation .icon');
+
+  Icons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      changeActive();
+      icon.classList.add("active-nav");
+    });
   });
- });
+
+  function changeActive() {
+    Icons.forEach((icon) => {
+      icon.classList.remove("active-nav");
+    });
+  }
+  
  
- function changeActive() {
-  Icons.forEach(icon => {
-    icon.classList.remove('active-nav');
-  });
- };
+
+
   return (
     <div className="navigation">
-      <a href="#home">
-        <AiOutlineHome className="icon"/>
+      <a href="#home" >
+        <AiOutlineHome className="icon active-nav" />
       </a>
       <a href="#about">
-        <AiOutlineUser className="icon" />
+        <AiOutlinePicture className="icon" />
       </a>
       <a href="#members">
-        <AiOutlinePicture className="icon" />
+        <AiOutlineShopping className="icon" />
       </a>
       <a href="#contact">
         <BiMessageRoundedDots className="icon" />
@@ -41,6 +52,7 @@ function Navbar() {
     </div>
   );
 }
+
 
 
 

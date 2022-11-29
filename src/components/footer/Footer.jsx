@@ -7,7 +7,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div id="footer" className="container footer-container">
-      <h2>Footer</h2>
+      <span className="footer-title">Dziękujemy za odwiedziny !!</span>
 
       <a href="#home" className="scroll-up">
         <hr />

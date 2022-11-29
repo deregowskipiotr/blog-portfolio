@@ -2,9 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+  height: 40vh;
   margin-top: 20px;
   transform: translateY(-100%);
   opacity: 0;

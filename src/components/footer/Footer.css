@@ -1,20 +1,20 @@
 .footer-container {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin-top: 10px;
+  min-height: 50vh;
+  padding: 50px;
 }
 
-.footer-container h2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 60%;
+.footer-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: var(--font-text);
+  color: var(--white-color);
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--red-color);
 }
 
 .scroll-up {
@@ -22,9 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
   bottom: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   gap: 10px;
   cursor: pointer;
 }
