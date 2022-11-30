@@ -35,8 +35,13 @@ p {
 }
 
 @media screen and (max-width: 490px) {
+
+  .header-container {
+    height: 200px;
+  }
   h3 {
     font-size: 28px;
+    margin-top: 30px;
   }
 
   p {

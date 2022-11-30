@@ -216,7 +216,9 @@
 
 @media screen and (max-width: 490px) {
 
- 
+  .home-container{
+    top: -30px;
+  }
   .home-container img {
     width: 110px;
     height: 110px;
