@@ -33,3 +33,13 @@ p {
   font-weight: 600;
   opacity: .6;
 }
+
+@media screen and (max-width: 490px) {
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}

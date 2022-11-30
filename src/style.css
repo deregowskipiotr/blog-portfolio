@@ -97,5 +97,9 @@ body::after {
 @media screen and ( max-width: 490px) {
   .container {
     width: var(--phone-width);
+    display: flex;
+    
+    
+    
   }
 }

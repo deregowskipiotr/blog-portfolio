@@ -31,3 +31,20 @@
   color: var(--white-color);
   font-weight: 100;
 }
+
+@media screen and (max-width: 490px) {
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 40px;
+  }
+  .button-container .btn.pri,
+  .button-container .btn.sec {
+    
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+  }
+
+}

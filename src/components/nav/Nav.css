@@ -54,3 +54,14 @@
   fill: var(--white-color);
   
 }
+
+@media screen and (max-width: 490px) {
+
+  .navigation {
+    left: 20px;
+    top: 40%;
+  }
+  .icon {
+    font-size: 28px;
+  }
+}

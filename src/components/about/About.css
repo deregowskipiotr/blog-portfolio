@@ -84,3 +84,23 @@
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, var(--black-color));
 }
 
+@media screen and (max-width: 490px) {
+  .about-container {
+    display: flex;
+   
+  }
+  .about-title {
+    top: 0;
+    font-size: 22px;
+  }
+
+  .box {
+    margin-bottom: 300px;
+    width: 90px;
+    height: 110px;
+  }
+
+  .box span img {
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(140px);
+  }
+}
