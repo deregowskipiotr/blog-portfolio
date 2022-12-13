@@ -3,7 +3,9 @@ import Buttons from '../button/Button';
 import { BsMouse } from 'react-icons/bs';
 import './Home.css';
 
+
 function Home() {
+
 
 const handleClick = (e) => {
   e.currentTarget.classList.toggle('active');

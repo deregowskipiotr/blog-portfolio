@@ -84,10 +84,30 @@
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, var(--black-color));
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   .about-container {
     display: flex;
    
+  }
+  .about-title {
+    font-size: 26px;
+  }
+
+  .box {
+    margin-bottom: 300px;
+    width: 140px;
+    height: 200px;
+  }
+
+  .box span img {
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(200px);
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .about-container {
+    display: flex;
+    height: 80vh;
   }
   .about-title {
     top: 0;

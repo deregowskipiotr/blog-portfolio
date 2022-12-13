@@ -11,7 +11,7 @@ import './Nav.css';
   const[icon, setIcon] = useState(false);
   
   useEffect(() => {
-    setIcon()
+    setIcon();
   }, [icon]);
 
   let Icons = document.querySelectorAll('.navigation .icon');
@@ -29,8 +29,6 @@ import './Nav.css';
     });
   }
   
- 
-
 
   return (
     <div className="navigation">

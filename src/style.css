@@ -99,7 +99,6 @@ body::after {
     width: var(--phone-width);
     display: flex;
     
-    
-    
+
   }
 }

@@ -50,6 +50,21 @@
   font-weight: 100;
 }
 
+@media screen and (max-width: 768px) {
+
+  .footer-title {
+    font-size: 26px;
+  }
+
+  .scroll-up h5 {
+    font-size: 18px;
+  }
+
+  .scroll-icon-up {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 490px) {
 
   .footer-title {
